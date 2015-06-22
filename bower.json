@@ -1,0 +1,13 @@
+{
+  "name": "Codegurukul",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hardikp24/Codegurukul_practise",
+  "authors": [
+    "hardikp24 <hardik.patil2494@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}

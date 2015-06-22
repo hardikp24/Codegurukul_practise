@@ -1,9 +1,20 @@
 html
+	
 	head
-		title jade
+		meta(charset='utf-8')
+		|     
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		|     
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		title Jade
+
+		link(href='/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
 		link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
 		link(href="/css/main.css" rel="stylesheet" )
 	body
-		p Hello World
-		-for(var x=0;x<3;x++)
-			li item
+		h1.jumbotron Hello, world!
+
+		script(src='/vendor/jquery/dist/js/jquery.js' type="text/JavaScript")
+
+		script(src='/vendor/bootstrap/dist/js/bootstrap.js' type="text/JavaScript")
