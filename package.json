@@ -1,0 +1,28 @@
+{
+  "name": "codegurukul",
+  "version": "0.0.1",
+  "description": "This is my web application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardikp24/Codegurukul_practise.git"
+  },
+  "keywords": [
+    "Education",
+    "Web",
+    "App"
+  ],
+  "author": "Hardik Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardikp24/Codegurukul_practise/issues"
+  },
+  "homepage": "https://github.com/hardikp24/Codegurukul_practise#readme",
+  "dependencies": {
+    "express": "^4.13.0",
+    "jade": "^1.11.0"
+  }
+}
