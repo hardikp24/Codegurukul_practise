@@ -1,0 +1,19 @@
+html
+	head
+		meta(charset='utf-8')
+		|     
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		|     
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		title Jade
+
+		link(href='/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
+		link(href="/css/main.css" rel="stylesheet" )
+	body
+		include ../partials/header
+		block main
+		include ../partials/footer
+		script(src='/vendor/jquery/dist/js/jquery.js' type="text/JavaScript")
+		script(src='/vendor/bootstrap/dist/js/bootstrap.js' type="text/JavaScript")

@@ -1,26 +1,27 @@
-html
-	
-	head
-		meta(charset='utf-8')
-		|     
-		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		|     
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-
-		title Jade
-
-		link(href='/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
-		link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
-		link(href="/css/main.css" rel="stylesheet" )
-	body
-		h1.jumbotron Hello, world!
-		hr
-		.container
-			.row
-			- for(var i=0;i<5;i++)		
-				.col-md-3
-					.box
-						h3 Factbase offset
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolore provident, dolores voluptatum facere accusamus quae amet error vel laudantium, assumenda pariatur ut iure delectus, tempore minima esse ipsam blanditiis.
-		script(src='/vendor/jquery/dist/js/jquery.js' type="text/JavaScript")
-		script(src='/vendor/bootstrap/dist/js/bootstrap.js' type="text/JavaScript")
+extends ./includes/layout
+block main
+	.container
+		.row
+			.col-md-12
+				.jumbotron
+					h1 Hardik Patil
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus optio quasi voluptas magni provident voluptate vitae id, explicabo repellendus vero? Earum enim error, aut, veniam dignissimos vero voluptatem voluptatibus quibusdam.
+	.container
+		.row
+			.col-md-6
+				.panel.panel-primary
+					.panel-heading.text-center Features courses
+					.panel-body
+						each val in courseList
+							if val.featured
+								.row
+									.col-md-12
+										p= val.name
+			.col-md-6
+				.panel.panel-primary
+					.panel-heading.text-center New courses
+					.panel-body
+						each val in courseList
+							.row
+								.col-md-3 Published : #{val.published}
+								.col-md-9 #{val.name}

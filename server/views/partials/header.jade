@@ -1,0 +1,16 @@
+.navbar.navbar-inverse.navbar-fixed-top
+	.container
+		.navbar-header
+			a.navbar-brand(href="/") Codegurukul
+		.navbar-collapse.collapse 
+			ul.nav.navbar-nav
+				li
+					a(href="/") Home
+				.navbar-right
+					if(!user)
+						form.navbar-form(action="/login" method="post")
+							.form-group
+								input.form-control(placeholder="Email" name="Username")
+							.form-group
+								input.form-control(type="password" placeholder="Password" name="password")
+							button.btn.btn-primary Sign In 

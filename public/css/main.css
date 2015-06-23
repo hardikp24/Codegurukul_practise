@@ -1,9 +1,13 @@
-.box p {
-  border: 1px solid #0072bc;
-  box-shadow: 1px 0px 23px gray;
-  /*margin-bottom: 40px;*/
-  height: 211px;
-  /*position: relative;*/
+.navbar-form .form-group, .navbar-form button {
+  margin-left: 10px;
+}
+
+footer p {
+  border-top: 1px solid #d7e0e2;
+}
+
+body {
+  padding-top: 90px;
 }
 
 /*# sourceMappingURL=main.css.map */
