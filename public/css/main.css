@@ -1,6 +1,9 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
+.box p {
+  border: 1px solid #0072bc;
+  box-shadow: 1px 0px 23px gray;
+  /*margin-bottom: 40px;*/
+  height: 211px;
+  /*position: relative;*/
 }
 
 /*# sourceMappingURL=main.css.map */

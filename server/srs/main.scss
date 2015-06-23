@@ -1,7 +1,9 @@
-	$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+.box{
+	p{
+	border: 1px solid #0072bc;
+	box-shadow: 1px 0px 23px gray;
+	margin-bottom:40px;
+	position: relative;
+	  height: 211px
+	}
 }
