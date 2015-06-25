@@ -1,0 +1,14 @@
+extends ./includes/layout
+block main
+  .container
+    .row
+      .col-md-6.col-md-offset-4
+        form(action='/signup' method='post')
+          input.form-control(type='text' placeholder='Enter Username' name="uname")
+          input.form-control(type='text' placeholder='Enter Username' name="uid")
+          input.form-control(type='password' placeholder='Enter Password' name="pass")
+          .checkbox
+            label
+              input(type="checkbox" name="remme") 
+              font Remember Me
+          button.btn.btn-default(type='submit' ) Submit

@@ -1,0 +1,37 @@
+extends ./includes/layout
+block main
+      .container
+            .row
+                  .col-md-4-offset-md-4
+                        .jumbotron
+                          form(action="/addcourse" method="post")
+                              font User name :
+                              br
+                              input(type='text', name='uname', placeholder='User name')
+                              br
+                              font Course name:
+                              br
+                              input(type='text', name='coursename', value='' placeholder='XYZ Organization')
+                              br
+                              font Date of Publishing:
+                              br
+                              input(type='date', name='date', value='' placeholder='in DD/MM/YYYY')
+                              br
+                              font Is it Featured :
+                              br
+                              input(type='radio', name='feat' , value=true)
+                              p Yes
+                              input(type='radio', name='feat',  value=false)
+                              p No
+                              font Enter The Time:
+                              input(type='text', name='timer', value='' placeholder='Enter Time in HH:MM:SS')
+                              br
+                              br
+                              select(name="batches")
+                                    option(value="batch0") 
+                                    option(value="batch1") Summer
+                                    option(value="batch2") Winter
+                                    option(value="batch3") Spring
+                              br
+                              br
+                              input(type='submit', value='Submit')                  

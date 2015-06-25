@@ -1,0 +1,25 @@
+extends ./includes/layout
+block main
+    .container
+        .row
+            .col-md-6
+                .panel.panel-primary
+                     form(action="/addcourse")
+                         button.btn.btn-primary(type='submit') Add Course
+                   
+                        each val in Course 
+                            if val.name
+                                .row
+                                    .col-md-12
+                                        p User name:!{val.uname}
+                                        p Course Name: !{val.name}
+                                        p  Published:!{val.published}
+                                        p Featured:!{val.featured}
+                                        p Time:!{val.time}
+                                        p Batch:!{val.batch}
+                                        br
+                                        
+                                        form(action="/deletecourse/"+val._id method="post")
+                                            button.btn.btn-default(type='submit') Delete
+                                        
+

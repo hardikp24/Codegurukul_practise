@@ -1,27 +1,53 @@
 extends ./includes/layout
 block main
-	.container
-		.row
-			.col-md-12
-				.jumbotron
-					h1 Hardik Patil
-					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus optio quasi voluptas magni provident voluptate vitae id, explicabo repellendus vero? Earum enim error, aut, veniam dignissimos vero voluptatem voluptatibus quibusdam.
-	.container
-		.row
-			.col-md-6
-				.panel.panel-primary
-					.panel-heading.text-center Features courses
-					.panel-body
-						each val in courseList
-							if val.featured
-								.row
-									.col-md-12
-										p= val.name
-			.col-md-6
-				.panel.panel-primary
-					.panel-heading.text-center New courses
-					.panel-body
-						each val in courseList
-							.row
-								.col-md-3 Published : #{val.published}
-								.col-md-9 #{val.name}
+    .container
+        .row
+            .col-md-12.text-center.jumbotron
+                h1 Welcome to my Web Application
+                h2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptas sunt magni, obcaecati exercitationem hic earum vel tenetur illo laboriosam harum non quod voluptates nostrum maxime eligendi ipsa ducimus neque.        
+        .row
+            .col-md-12.text-center
+                .btn-group
+                    button.btn.btn-default.btn-lg.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                        p Action 
+                        span.caret
+                         //
+                      ul.dropdown-menu
+                        li
+                          a(href='/addcourse') Add New Course
+                        //     
+                        li
+                          a(href='/view') Delete Course
+                         //    
+                        li
+                          a(href='#') Edit Course
+                         //    
+                        li.divider(role='separator')
+                       //      
+                        li
+                          a(href='#') Separated link
+    .container
+        .row
+            .col-md-6
+                .panel.panel-primary
+                    .panel.panel-heading.text-center New Courses
+                    .panel-body 
+                        //each val in courseList
+                            if val.featured
+                                .row
+                                    .col-md-12
+                                        p= val.name
+            .col-md-6
+                .panel.panel-primary
+                    .panel.panel-heading.text-center Featured Courses
+                    .panel-body 
+                        //each val in courseList
+                            .row
+                                .col-md-3 {val.published}
+                                    .col-md-9 {val.name}
+
+
+
+
+
+
